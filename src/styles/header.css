@@ -1,0 +1,29 @@
+:root{
+    --color-principal: linear-gradient(to right, #4a7ebb, #2c5a9f, #0c3e77);
+}
+.header {
+    background-image: var(--color-principal);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-flag {
+    width: 40px;
+    height: auto;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 4px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
