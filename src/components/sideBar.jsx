@@ -13,6 +13,7 @@ function SideBar() {
     { to: '/activos-fijos', label: 'Activos Fijos' },
     { to: '/transferencia', label: 'Transferencia' },
     { to: '/oficina', label: 'Oficinas' },
+    { to: '/grupo-contable', label: 'Grupo Contable' },
   ]
 
   return (

@@ -14,7 +14,7 @@ function Navbar() {
         <Link to="/activos-fijos">Activos</Link> |
         <Link to="/transferencia">Transferencia</Link> |
         <Link to="/oficina">Oficinas</Link> |
-        <Link to="/about">About</Link>
+        <Link to="/grupo-contable">Grupo Contable</Link>
       </nav>
     </nav>
   );

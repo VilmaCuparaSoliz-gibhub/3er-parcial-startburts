@@ -1,0 +1,28 @@
+.grupo-contable-container {
+  padding: 1rem;
+}
+
+.grupo-contable-container h1 {
+  margin-bottom: 1rem;
+}
+
+.data-grid {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.data-grid th,
+.data-grid td {
+  border: 1px solid #d8dce6;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.data-grid th {
+  background-color: #f4f6f8;
+}
+
+.error-text {
+  color: #b42318;
+}
