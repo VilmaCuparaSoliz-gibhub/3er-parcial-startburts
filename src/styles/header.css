@@ -8,7 +8,7 @@
 .header {
     background-image: var(--color-principal);
     color: white;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     justify-content: auto;
     align-items: center;
@@ -17,7 +17,7 @@
 .header-content {
     display: flex;
     align-items:center; ;
-    gap: 12px;
+    gap: 10px;
 }
 
 .header-flag {
