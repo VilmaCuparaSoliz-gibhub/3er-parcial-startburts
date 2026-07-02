@@ -18,6 +18,8 @@
 .activos-fijos-page .container {
   max-width: 850px;
   background-color: #ffffff;
+  border: 1px solid #777e85; 
+  border-radius: var(--bordeado); 
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   overflow: hidden;
