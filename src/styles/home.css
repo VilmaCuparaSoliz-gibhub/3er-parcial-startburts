@@ -1,0 +1,18 @@
+:root{
+    --color-principal: linear-gradient(#418ac9, #3573b1, #2c5a9f, #0c3e77,#1C3850);
+    --letra-principal:'calibri', sans-serif;
+    --color-boton: linear-gradient( #4898f5, #0d479f, #07356b);
+    --borde-boton: 1px solid black;
+    --bordeado:border-radius: 5px;
+    --texto-decorativo:'Snap ITC';
+}
+body{
+    background-color: #bcd7ee;
+    background-size: cover;
+    padding:0px;
+    margin:0px;
+}
+.imagen{
+    width: auto;
+    height: auto;
+}
