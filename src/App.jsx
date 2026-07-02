@@ -10,10 +10,11 @@ import Home from './pages/home'
 import UnidadAdministrativa from './pages/unidadAdministrativa'
 import Oficina from './pages/oficina'
 import ActivosFijos from './pages/activosFijos'
-import Administrativa from './pages/administrativa'
+import Administrativa from './pages/administrativa.jsx';
 import Recursos from './pages/recursos'
 import Transferencia from './pages/transferencia'
 import GrupoContable from './pages/grupo-contable'
+
 
 function App() {
   const [count, setCount] = useState(0)

@@ -186,4 +186,7 @@
     right: 0;
     border-right-color: var(--border);
   }
+  .admi1-container .win-btn.highlight-danger {
+    outline: 3px solid #dc3545;
+  }
 }
