@@ -1,0 +1,44 @@
+:root{
+    --color-principal: linear-gradient(#5392ca, #457CB4, #2c5a9f, #0c3e77,#1C3850);
+    --letra-principal:'calibri', sans-serif;
+    --color-boton: linear-gradient( #6088b7, #2c5a9f, #0c3e77);
+    --borde-boton: 1px solid black;
+    --bordeado:border-radius: 5px;
+}
+.header {
+    background-image: var(--color-principal);
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: auto;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items:center; ;
+    gap: 10px;
+}
+
+.header-flag {
+    width: 8rem;
+    height: 6rem;
+    margin-left: 6rem;
+    float:start;
+}
+
+.header h1 {
+    margin-bottom:-10px;
+    font-size: 3rem;
+    font-family:'Snap ITC';
+}
+.header p3 {
+    margin-top:-3px;
+    font-size: 14px;
+    font-family: 'Brand Hand ITC';
+}
+.header-info{
+    justify-content: right;
+    text-align: right;
+    margin-right: 6rem;
+}

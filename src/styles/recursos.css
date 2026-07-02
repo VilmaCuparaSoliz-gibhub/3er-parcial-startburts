@@ -1,0 +1,214 @@
+:root {
+  --color-principal: linear-gradient(#5791bc, #3b81ba, #17507e, #18456a, #022644);
+  --color-secundario: #aed0f1;
+  --color-boton: linear-gradient(#034281, #1463b3, #055780);
+  --letra: "MV Boli", Arial, sans-serif;
+  --borde-boton: 1px solid black;
+  --bordeado: 5px;
+}
+
+.recursos-page {
+  font-family: var(--letra);
+  margin: 10px;
+  padding: 0;
+  background: #f5f7fa;
+}
+
+.recursos-page .re-principal {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.recursos-page .re-header1 {
+  background: var(--color-boton);
+  color: white;
+  padding: 8px 12px;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: var(--borde-boton);
+}
+
+.recursos-page .re-header2 {
+  background: var(--color-principal);
+  color: white;
+  padding: 10px 12px;
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: var(--borde-boton);
+}
+
+.recursos-page .re-header3 {
+  background: var(--color-principal);
+  padding: 18px;
+  text-align: center;
+}
+
+.recursos-page .re-header3 h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, .4);
+}
+
+.recursos-page .re-contenido {
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  background: #f4f8fc;
+}
+
+.recursos-page .re-menu {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+.recursos-page .re-grupo-gestion,
+.recursos-page .re-grupo-herramientas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.recursos-page .re-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.recursos-page .re-input-gestion {
+  margin-bottom: 12px;
+}
+
+.recursos-page .vfp-input-small {
+  width: 120px;
+  padding: 7px;
+  border: 1px solid #0c3e77;
+  border-radius: var(--bordeado);
+  font-size: 14px;
+  background: white;
+}
+
+.recursos-page .vfp-textarea {
+  width: 100%;
+  min-height: 260px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #0c3e77;
+  border-radius: var(--bordeado);
+  font-size: 13px;
+  font-family: Consolas, monospace;
+  box-sizing: border-box;
+}
+
+.recursos-page .re-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.recursos-page .vfp-button,
+.recursos-page .vfp-button-exit {
+  background: var(--color-boton);
+  color: white;
+  border: var(--borde-boton);
+  border-radius: var(--bordeado);
+  padding: 9px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: .2s;
+}
+
+.recursos-page .vfp-button:hover,
+.recursos-page .vfp-button-exit:hover {
+  filter: brightness(1.15);
+}
+
+.recursos-page .modal-fondo {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.recursos-page .modal-contenido {
+  width: 420px;
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.35);
+}
+
+.recursos-page .modal-contenido h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #0c3e77;
+}
+
+.recursos-page .modal-contenido p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.recursos-page .modal-contenido label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #0c3e77;
+}
+
+.recursos-page .modal-contenido input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #0c3e77;
+  border-radius: var(--bordeado);
+  box-sizing: border-box;
+}
+
+.recursos-page .modal-botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.recursos-page .modal-botones button {
+  padding: 8px 16px;
+  border: var(--borde-boton);
+  border-radius: var(--bordeado);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.recursos-page .modal-botones button:first-child {
+  background: #198754;
+}
+
+.recursos-page .modal-botones button:last-child {
+  background: #dc3545;
+}
+
+@media (max-width: 768px) {
+
+  .recursos-page .re-contenido {
+    flex-direction: column;
+  }
+
+  .recursos-page .re-menu {
+    width: 100%;
+  }
+
+  .recursos-page .vfp-button {
+    width: 100%;
+  }
+
+}
