@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="navbar">
       <nav>
         <Link to="/">Home</Link> |
-        <Link to="/unidad-administrativa">Unidad Adm</Link> |
+        <Link to="/unidad-administrativa">Unidad Administrativa</Link> |
         <Link to="/administrativa">Administrativa</Link> |
         <Link to="/recursos">Recursos</Link> |
         <Link to="/activos-fijos">Activos</Link> |

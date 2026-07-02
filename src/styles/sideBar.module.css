@@ -1,0 +1,27 @@
+:root{
+    --color-principal: linear-gradient(#5392ca, #457CB4, #2c5a9f, #0c3e77,#1C3850);
+    --letra-principal:'calibri', sans-serif;
+    --color-boton: linear-gradient( #6088b7, #2c5a9f, #0c3e77);
+    --borde-boton: 1px solid black;
+    --bordeado:border-radius: 5px;
+}
+*{
+    margin:3px;
+}
+.nav button {
+  background-image: linear-gradient(#84ADDC, #B0D3F9, #CEF0FE);
+  border:2px ridge #2c5a9f;
+  border-inline-color: var(--bordeado);
+  color: #011426;
+  padding: 8px 12px;
+  margin: 4px;
+  font-size: 14px;
+  width: 12rem;
+  border:1px ridge #2c5a9f;
+  border-radius: 5px;
+}
+:link{
+  text-decoration: none;
+  color: #011426;
+  border: 0.9px solid #2c5a9f;
+}

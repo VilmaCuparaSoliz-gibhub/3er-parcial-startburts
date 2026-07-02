@@ -11,5 +11,6 @@
     color:white;
     text-align: center;
     font-family: var(--texto-decorativo);
-    font-size: 2rem;
+    padding: 0px;
+    font-size: 1.4rem;
 }
