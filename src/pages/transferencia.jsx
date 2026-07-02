@@ -1,10 +1,8 @@
+import ShowTransferencia from '../components/transferencia/show';
+import '../styles/transferencia.css';
+
 function Transferencia() {
-  return (
-    <div className="transferencia-container">
-      <h1>Transferencia</h1>
-      <p>Gestión de transferencias administrativas.</p>
-    </div>
-  );
+  return <ShowTransferencia />;
 }
 
 export default Transferencia;
