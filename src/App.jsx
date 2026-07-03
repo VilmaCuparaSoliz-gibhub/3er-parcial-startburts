@@ -18,7 +18,7 @@ import GrupoContable from './pages/grupo-contable'
 
 function App() {
   const [count, setCount] = useState(0)
-  const basename = process.env.NODE_ENV === 'production' ? '/react313g1' : '/'
+  const basename = process.env.NODE_ENV === 'production' ? '/3er-parcial-startburts' : '/'
 
   return (
     <BrowserRouter basename={basename}>
