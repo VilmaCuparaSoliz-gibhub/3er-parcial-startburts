@@ -198,8 +198,9 @@ function ActivosFijosShow() {
                 <span className="label">Responsable:</span>
                 <select id="responsable" className="input-field" value={formData.responsable} onChange={handleChange} required>
                   <option value="" disabled hidden>Seleccione el responsable...</option>
-                  <option value="NILIA TANCARA DE MEJIA">NILIA TANCARA DE MEJIA</option>
-                  <option value="JUAN PEREZ GOMEZ">JUAN PEREZ GOMEZ</option>
+                  <option value="Gabriela Rodriguez Contreras">Gabriela Rodriguez Contreras</option>
+                  <option value="Daniel Sebastian Rojas ">Daniel Sebastian Rojas </option>
+                  <option value="Carlos Mario Lopez">Carlos Mario Lopez</option>
                 </select>
               </div>
             </div>
