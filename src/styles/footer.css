@@ -3,7 +3,7 @@
     --letra-principal:'calibri', sans-serif;
     --color-boton: linear-gradient( #4898f5, #0d479f, #07356b);
     --borde-boton: 1px solid black;
-    --bordeado:border-radius: 5px;
+    --bordeado: 5px;
     --texto-decorativo:'Snap ITC';
 }
 .footer{
