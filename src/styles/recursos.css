@@ -125,6 +125,12 @@
   font-family: Arial, Helvetica, sans-serif;
   transition: .2s;
 }
+.recursos-page .vfp-button-exit{
+  margin-top: 3rem;
+  margin-right: 3rem;
+  width: 6rem;
+
+}
 
 .recursos-page .vfp-button:hover,
 .recursos-page .vfp-button-exit:hover {
