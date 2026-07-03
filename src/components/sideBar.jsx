@@ -32,7 +32,7 @@ function SideBar() {
 
       <aside className={`${styles.sidebar} ${open ? styles.open : ''}`}>
         <div className={styles.brand}>
-          <h2>  MENU PRINCIPAL</h2>
+          <h2>  <pre>  MENU PRINCIPAL</pre></h2>
         </div>
 
         <nav id="primary-navigation" className={styles.nav} aria-label="Primary">
@@ -40,7 +40,7 @@ function SideBar() {
             {links.map((l) => {
               const active = location.pathname === l.to
               return (
-                <li key={l.to}>
+                <p key={l.to}>
                   <button
                     type="button"
                     className={active ? styles.active : ''}
@@ -51,7 +51,7 @@ function SideBar() {
                   >
                     {l.label}
                   </button>
-                </li>
+                </p>
               )
             })}
           </ul>
