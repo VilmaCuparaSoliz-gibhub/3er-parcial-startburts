@@ -1,0 +1,205 @@
+.admi1-container {
+    font-family: var(--letra), Tahoma, Arial, sans-serif;
+    padding: 80px;
+    display: flex;
+    flex-direction: column; /* Alinea el formulario y los elementos hijos */
+    align-items: center;
+    background: #d7d7d7;
+    min-height: 100vh;
+}
+
+/* VENTANA */
+.admi1-container .window {
+    background: #e9edf2;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 0px #070707;
+}
+
+/* VENTANA PRINCIPAL */
+.admi1-container .main-window {
+    width: 620px;
+}
+
+/* TITULO */
+.admi1-container .title-bar {
+    background: #000;
+    color: white;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* TITULO AZUL */
+.admi1-container .blue-banner {
+    background: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #0b2c4d;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* PANEL */
+.admi1-container .form-panel {
+    border: 2px solid #050505;
+    margin: 10px;
+    padding: 15px;
+    background: #f7f7f7;
+}
+
+/* CAMPOS */
+.admi1-container .field {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+/* LABELS */
+.admi1-container label {
+    width: 180px;
+    color: #1f4e79;
+    font-weight: bold;
+}
+
+/* INPUTS */
+.admi1-container input,
+.admi1-container textarea {
+    border: 2px solid #070707;
+    padding: 4px;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+/* INPUT PEQUEÑO */
+.admi1-container .input-small {
+    width: 60px;
+}
+
+/* INPUT GRANDE */
+.admi1-container .input-full {
+    flex: 1;
+}
+
+/* TEXTAREA */
+.admi1-container .textarea-wrapper {
+    display: flex;
+    flex: 1;
+    border: 2px solid #0c0c0c;
+    background: white;
+}
+
+/* AREA TEXTO */
+.admi1-container textarea {
+    flex: 1;
+    height: 40px;
+    border: none;
+    resize: none;
+}
+
+/* SCROLL */
+.admi1-container .scrollbar-v {
+    width: 18px;
+    background: #daccb2;
+    text-align: center;
+    font-size: 10px;
+    border-left: 1px solid #cfcbcb;
+}
+
+/* BOTONES */
+.admi1-container .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 20px;
+}
+
+/* BOTON */
+.admi1-container .win-btn {
+    background: var(--color-boton);
+    color: white;
+    border: 1px solid #0f0f0f;
+    padding: 6px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* BOTON RESALTADO */
+.admi1-container .win-btn.highlight {
+    outline: 3px solid #382b74;
+}
+
+/* CONTENEDOR BOTON */
+.admi1-container .btn-container {
+    position: relative;
+    border-radius: 10px;
+}
+
+/* TOOLTIP */
+.admi1-container .tooltip {
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    background: white;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 10px;
+    margin-left: 125%;
+}
+
+.admi1-container .tooltipo {
+    position: absolute;
+    top: -400px;
+    right: -230px;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 10px;
+    margin-left: 205%;
+}
+
+/* MODAL CONTROLADO POR REACT */
+.admi1-container .modal-siaf {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el modal perfectamente en la pantalla */
+    width: 296px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    background: #ececec;
+}
+
+.admi1-container .title-bar.black {
+    background: black;
+}
+
+.admi1-container .modal-body {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #ececec;
+    justify-content: center;
+}
+
+.admi1-container .icon-info {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #2c5aa0;
+    color: #2c5aa0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 31px; /* Centra el texto 'i' verticalmente */
+    margin-right: 15px;
+}
+
+.admi1-container .modal-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #ececec;
+}

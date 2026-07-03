@@ -10,14 +10,15 @@ import Home from './pages/home'
 import UnidadAdministrativa from './pages/unidadAdministrativa'
 import Oficina from './pages/oficina'
 import ActivosFijos from './pages/activosFijos'
-import Administrativa from './pages/administrativa'
+import Administrativa from './pages/administrativa.jsx';
 import Recursos from './pages/recursos'
 import Transferencia from './pages/transferencia'
 import GrupoContable from './pages/grupo-contable'
 
+
 function App() {
   const [count, setCount] = useState(0)
-  const basename = process.env.NODE_ENV === 'production' ? '/react313g1' : '/'
+  const basename = process.env.NODE_ENV === 'production' ? '/3er-parcial-startburts' : '/'
 
   return (
     <BrowserRouter basename={basename}>

@@ -1,0 +1,352 @@
+:root {
+  --color-principal: linear-gradient(#5791bc,#3b81ba,#17507e,#18456a,#022644);
+  --color-secundario: #aed0f1;
+  --color-boton: linear-gradient(#034281, #1463b3, #055780);
+  --letra: 'MV Boli';
+}
+
+.oficina-window,
+.oficina-window * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.oficina-window {
+  width: min(740px, 100%);
+  margin: 0 auto;
+  border: 1px solid #0a4474;
+  background: #ededed;
+  color: #163049;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: none;
+}
+
+.oficina-system-header {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  background: #b9cfe3;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.oficina-unit-bar {
+  height: 28px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 8px;
+  background: linear-gradient(180deg, #5ca7d6 0%, #216e9d 58%, #165176 100%);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.oficina-unit-bar span {
+  line-height: 12px;
+}
+
+.oficina-unit-bar strong {
+  grid-column: 2;
+  align-self: end;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+
+.oficina-title {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #1d719f 0%, #0d314a 100%);
+  color:white;
+  font-size: 0;
+  font-weight: 700;
+}
+
+.oficina-body {
+  padding: 12px 24px 10px 24px;
+  background: #eeeeee;
+}
+
+.oficina-form-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 60px;
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.oficina-form {
+  display: grid;
+  grid-template-columns: 88px 48px minmax(260px, 1fr) 64px;
+  gap: 6px 4px;
+  align-items: center;
+}
+
+.oficina-form label {
+  color: #001d7b;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.oficina-form input,
+.oficina-form select,
+.oficina-form textarea {
+  border: 1px solid #9aa8b5;
+  background: #ffffdf;
+  color: #202020;
+  font: 12px Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+.oficina-code-input {
+  width: 48px;
+  height: 20px;
+  text-align: right;
+}
+
+.oficina-select {
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+  font-size: 11px;
+}
+
+.oficina-status {
+  width: 64px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.oficina-observation {
+  grid-column: 2 / 5;
+  width: 100%;
+  min-height: 44px;
+  resize: vertical;
+}
+
+.oficina-side-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.oficina-side-actions button,
+.oficina-bottom-actions button,
+.oficina-exit-btn {
+  height: 21px;
+  border: 1px solid #7e8790;
+  border-radius: 0;
+  background: linear-gradient(180deg, #f5f5f5 0%, #c3c3c3 100%);
+  color: #1f1f1f;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.oficina-side-actions button {
+  width: 60px;
+}
+
+.oficina-side-actions button.is-focused {
+  outline: 1px dashed #0b253c;
+  outline-offset: 2px;
+}
+
+.oficina-side-actions button:disabled,
+.oficina-bottom-actions button:disabled {
+  color: #d8d8d8;
+  cursor: default;
+  background: linear-gradient(180deg, #d1d1d1 0%, #a5a5a5 100%);
+}
+
+.oficina-table-wrap {
+  width: 100%;
+  height: 219px;
+  overflow: auto;
+  background: #ffffdf;
+}
+
+.data-grid {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  background: #ffffdf;
+}
+
+.data-grid th,
+.data-grid td {
+  height: 18px;
+  padding: 0;
+  border: 1px solid #6d8fb2;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.data-grid th {
+  background: #ffffff;
+  color: #0c0c0c;
+  font-weight: 700;
+  height: 20px;
+  padding: 1px 4px;
+  text-align: center;
+}
+
+.data-grid td {
+  background: #ffffdf;
+  color: #1b1b1b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-grid input {
+  width: 100%;
+  height: 18px;
+  border: 0;
+  background: transparent;
+  color: #000000;
+  font: 12px Arial, Helvetica, sans-serif;
+  outline: none;
+  padding: 0 2px;
+}
+
+.data-grid tr.is-selected td {
+  background: #f4f7d2;
+}
+
+.data-grid tbody tr:hover td {
+  background: #fff9bd;
+}
+
+.loading,
+.error,
+.empty-state {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #aab2a0;
+  background: #ffffdf;
+  font-size: 16px;
+}
+
+.loading {
+  color: #174268;
+}
+
+.error {
+  color: #8f1c1c;
+}
+
+.empty-state {
+  color: #565656;
+}
+
+.oficina-bottom-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 354px) 96px;
+  gap: 4px;
+  justify-content: end;
+  align-items: center;
+  margin-top: 18px;
+  border: 1px solid #0b5d9f;
+}
+
+.oficina-bottom-actions {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3px;
+  padding: 15px 6px 10px;
+  border: 0;
+  background: #f3f3f3;
+}
+
+.oficina-bottom-actions button,
+.oficina-exit-btn {
+  background: linear-gradient(180deg, #2f6f94 0%, #05253a 100%);
+  color: #ffffff;
+}
+
+.oficina-bottom-actions button:disabled {
+  color: #e0e0e0;
+  background: linear-gradient(180deg, #bdbdbd 0%, #737373 100%);
+}
+
+.oficina-exit-btn {
+  width: 88px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+@media (max-width: 900px) {
+  .oficina-body {
+    padding: 18px 14px;
+  }
+
+  .oficina-form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .oficina-form {
+    grid-template-columns: 120px 82px minmax(160px, 1fr);
+  }
+
+  .oficina-status {
+    grid-column: 2 / 4;
+  }
+
+  .oficina-observation {
+    grid-column: 2 / 4;
+  }
+
+  .oficina-side-actions {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .oficina-side-actions button {
+    width: 100%;
+  }
+
+  .oficina-bottom-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .oficina-bottom-actions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .oficina-exit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .oficina-form {
+    grid-template-columns: 1fr;
+  }
+
+  .oficina-form label,
+  .oficina-status,
+  .oficina-observation {
+    grid-column: auto;
+  }
+
+  .oficina-code-input,
+  .oficina-status {
+    width: 100%;
+  }
+
+  .oficina-side-actions,
+  .oficina-bottom-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}

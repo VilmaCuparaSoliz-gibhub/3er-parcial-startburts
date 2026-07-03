@@ -42,7 +42,9 @@
   justify-content: center;
   align-items: center;
   background:linear-gradient(#418ac9, #3573b1, #2c5a9f, #0c3e77, #1c3850);
+  color: white;
 }
+
 
 .title-main-text {
   color: white;

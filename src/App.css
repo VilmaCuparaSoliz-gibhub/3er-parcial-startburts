@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 *{
   box-sizing: border-box;
   margin: 0;
@@ -186,4 +189,22 @@
     right: 0;
     border-right-color: var(--border);
   }
+  .admi1-container .win-btn.highlight-danger {
+    outline: 3px solid #dc3545;
+  }
+=======
+>>>>>>> 66cafcb66bed47d1cb1c69fb2834b10509736418
+.content{
+  margin:20px;
+  padding:10px;
+  border:1.5px double rgb(81, 80, 80);
+
+
+<<<<<<< HEAD
+=======
+>>>>>>> d6d58c1971d839a89440372655466aa375615b6f
+>>>>>>> 66cafcb66bed47d1cb1c69fb2834b10509736418
+}
+.main{
+  border:1px solid rgb(81, 80, 80);
 }
